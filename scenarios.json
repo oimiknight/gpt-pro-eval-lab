@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Long-context product strategy synthesis",
+    "category": "Reasoning",
+    "difficulty": "Expert",
+    "description": "Tests whether the model can reconcile many constraints and produce a decision-ready strategy memo.",
+    "prompt": "You are advising a small AI productivity startup. Given customer interviews, pricing pressure, and a six-week engineering limit, propose a launch strategy with tradeoffs, risks, and a crisp next-week plan.",
+    "successSignals": [
+      "Separates facts, assumptions, and recommendations",
+      "Explains tradeoffs without hiding uncertainty",
+      "Produces a plan that is ambitious but feasible"
+    ]
+  },
+  {
+    "title": "Bug hunt with verification plan",
+    "category": "Coding",
+    "difficulty": "Advanced",
+    "description": "Checks whether the model can reason about code behavior and avoid unverified claims.",
+    "prompt": "Review a React component that intermittently loses form state after filtering a list. Identify likely causes, propose the smallest fix, and write a verification checklist.",
+    "successSignals": [
+      "Looks for key stability and controlled input state",
+      "Keeps the fix narrowly scoped",
+      "Includes regression cases and manual checks"
+    ]
+  },
+  {
+    "title": "Messy data analysis brief",
+    "category": "Data Analysis",
+    "difficulty": "Expert",
+    "description": "Evaluates numerical reasoning, caveats, and executive communication.",
+    "prompt": "You receive a CSV with missing dates, duplicate customer IDs, and revenue outliers. Explain how you would clean it, what charts you would create, and what claims you would avoid.",
+    "successSignals": [
+      "Names concrete data quality checks",
+      "Avoids overclaiming from flawed data",
+      "Turns analysis into decisions for stakeholders"
+    ]
+  },
+  {
+    "title": "Polished but constrained rewrite",
+    "category": "Writing",
+    "difficulty": "Advanced",
+    "description": "Measures style control under explicit constraints.",
+    "prompt": "Rewrite a dense technical announcement for non-technical executives. Keep it under 180 words, preserve three required facts, and make the tone confident but not salesy.",
+    "successSignals": [
+      "Preserves required facts exactly",
+      "Improves readability without adding hype",
+      "Respects the word limit"
+    ]
+  },
+  {
+    "title": "Agentic travel planning under constraints",
+    "category": "Agentic Workflow",
+    "difficulty": "Expert",
+    "description": "Tests multi-step planning, constraint tracking, and user-friendly assumptions.",
+    "prompt": "Plan a three-day work trip with two meetings, dietary constraints, budget limits, and a preference for walking routes. Ask only essential questions and make sensible defaults.",
+    "successSignals": [
+      "Tracks hard constraints separately from preferences",
+      "Minimizes unnecessary questions",
+      "Provides a practical schedule with fallback options"
+    ]
+  }
+]
