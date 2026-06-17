@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GPT Pro Eval Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Model testing workspace</p>
+        <h1>GPT Pro Eval Lab</h1>
+        <p class="subtitle">Design, score, and export demanding GPT Pro evaluation runs.</p>
+      </div>
+      <button id="exportReport" class="primary-button" type="button">Export report</button>
+    </header>
+
+    <main class="layout">
+      <section class="panel controls" aria-label="Scenario filters">
+        <div>
+          <label for="categoryFilter">Category</label>
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div>
+          <label for="difficultyFilter">Difficulty</label>
+          <select id="difficultyFilter">
+            <option value="all">All difficulty levels</option>
+            <option value="Advanced">Advanced</option>
+            <option value="Expert">Expert</option>
+          </select>
+        </div>
+        <div>
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search" placeholder="Find a scenario">
+        </div>
+      </section>
+
+      <section class="scenario-list" id="scenarioList" aria-label="Scenario list"></section>
+
+      <aside class="panel scorecard" aria-label="Scorecard">
+        <h2>Run Scorecard</h2>
+        <div id="scoreRows"></div>
+        <div class="score-total">
+          <span>Total</span>
+          <strong id="totalScore">0.0</strong>
+        </div>
+        <label for="runNotes">Observation notes</label>
+        <textarea id="runNotes" rows="8" placeholder="Record what the model did well, where it struggled, and any follow-up prompts."></textarea>
+      </aside>
+    </main>
+
+    <template id="scenarioTemplate">
+      <article class="scenario-card">
+        <div class="scenario-topline">
+          <span class="tag"></span>
+          <span class="difficulty"></span>
+        </div>
+        <h2></h2>
+        <p class="description"></p>
+        <details>
+          <summary>Prompt</summary>
+          <pre></pre>
+        </details>
+        <ul class="signals"></ul>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
