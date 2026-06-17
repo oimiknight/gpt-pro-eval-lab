@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-17T07:30:00.000Z",
+  "repository": "https://github.com/oimiknight/gpt-pro-eval-lab",
+  "scenario": {
+    "title": "Bug hunt with verification plan",
+    "category": "Coding",
+    "difficulty": "Advanced"
+  },
+  "totalScore": 4.1,
+  "scores": {
+    "reasoning": 4.5,
+    "instruction": 4,
+    "verification": 4.5,
+    "clarity": 4,
+    "usefulness": 3.5
+  },
+  "notes": "The model identified key instability and controlled input risks, proposed a narrow fix, and included regression checks. The answer would be stronger with a minimal reproduction and clearer manual QA steps.",
+  "visibleScenarioCount": 5
+}
