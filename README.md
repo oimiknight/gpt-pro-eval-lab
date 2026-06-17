@@ -4,9 +4,15 @@ A lightweight, browser-only lab for designing and scoring demanding GPT Pro test
 
 This project is intended for evaluating advanced model behavior on long-context reasoning, tool-use planning, writing quality, coding assistance, and multi-step problem solving. It ships as a static web app so reviewers can open it immediately from GitHub Pages or a local browser.
 
+## Live Demo
+
+Open the GitHub Pages demo:
+
+https://oimiknight.github.io/gpt-pro-eval-lab/
+
 ## Why This Project
 
-GPT Pro testing benefits from repeatable prompts, clear scoring criteria, and transparent notes about failure modes. GPT Pro Eval Lab gives testers a simple workflow:
+Open-source maintainers need repeatable ways to evaluate whether AI coding tools are actually useful for maintenance work. GPT Pro Eval Lab gives maintainers a simple workflow:
 
 1. Choose a test scenario.
 2. Review the expected capabilities and scoring rubric.
@@ -30,6 +36,8 @@ GPT Pro testing benefits from repeatable prompts, clear scoring criteria, and tr
 ├── styles.css
 ├── app.js
 ├── scenarios.json
+├── sample-report.json
+├── ROADMAP.md
 ├── TESTING_METHOD.md
 └── LICENSE
 ```
@@ -57,6 +65,22 @@ The included scenarios focus on tasks where a more capable model should show mea
 - Explaining tradeoffs and uncertainty without over-answering
 
 See [TESTING_METHOD.md](TESTING_METHOD.md) for the full rubric.
+
+## Maintainer Workflow Roadmap
+
+The roadmap focuses on evaluations for real open-source maintenance work:
+
+- Issue triage and duplicate detection
+- Pull request review checklists
+- Release note drafting
+- Regression scoring across repeated model runs
+- Public example reports for comparing outputs
+
+See [ROADMAP.md](ROADMAP.md) for the planned milestones.
+
+## Example Report
+
+The app exports JSON reports that can be shared with collaborators or attached to issue threads. See [sample-report.json](sample-report.json) for a representative output.
 
 ## GitHub Pages
 
